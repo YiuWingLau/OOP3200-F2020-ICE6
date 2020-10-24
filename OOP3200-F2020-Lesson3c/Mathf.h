@@ -55,8 +55,8 @@ public:
 	static float PingPong(float t, float length);
 	static float InverseLerp(float a, float b, float value);
 	static float DeltaAngle(float current, float target);
-	
-	
+
+
 private:
 };
 

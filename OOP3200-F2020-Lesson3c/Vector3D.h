@@ -46,7 +46,7 @@ public:
 	}
 
 	std::string ToString() const;
-	
+
 private:
 	T m_x;
 	T m_y;
@@ -63,7 +63,7 @@ Vector3D<T>::Vector3D(const T x, const T y, const T z) : m_x(x), m_y(y), m_z(z)
 template <class T>
 Vector3D<T>::Vector3D(const std::string& x, const std::string& y, const std::string& z)
 {
-	if(typeid(T) == typeid(int))
+	if (typeid(T) == typeid(int))
 	{
 		m_x = std::stoi(x);
 		m_y = std::stoi(y);
@@ -84,7 +84,7 @@ Vector3D<T>::Vector3D(const std::string& x, const std::string& y, const std::str
 		m_z = std::stod(z);
 	}
 
-	assert((typeid(T) == typeid(double)) || (typeid(T) == typeid(float)) || (typeid(T) == typeid(int)), 
+	assert((typeid(T) == typeid(double)) || (typeid(T) == typeid(float)) || (typeid(T) == typeid(int)),
 		"error encountered");
 
 }
